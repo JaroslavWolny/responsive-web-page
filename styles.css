@@ -1,0 +1,335 @@
+body {
+  font-family: "Roboto";
+  margin: 0;
+}
+
+.container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 70%;
+  }
+}
+
+.title_position {
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  width: min-content;
+}
+
+@media only screen and (min-width: 576px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+h3 {
+  font-weight: 100;
+}
+p {
+  font-size: 0.9rem;
+}
+
+.title {
+  background-image: url(./Zadani/images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.title_position {
+  height: 500px;
+}
+
+.title_text {
+  text-align: right;
+  color: white;
+}
+
+.title_text h1 {
+  position: relative;
+  top: 300px;
+}
+
+@media only screen and (min-width: 576px) {
+  .title_text h1 {
+    top: 250px;
+  }
+}
+
+.about_us_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 576px) {
+  .about_us_wrapper {
+    display: flex;
+    flex-direction: inherit;
+    align-items: inherit;
+  }
+}
+
+.about_us {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about_us.item {
+  width: inherit;
+}
+
+@media only screen and (min-width: 576px) {
+  .about_us.item {
+    width: 50%;
+  }
+}
+
+.about_us.item.item1 {
+  margin-right: 2rem;
+}
+
+.about_us.item.item2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.what_we_do {
+  background-color: #33292a;
+  color: white;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.what_we_do_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 4rem 0rem 2rem 0rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .what_we_do_icon {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.icon {
+  margin: 1rem 0rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .icon {
+    margin: 0;
+  }
+}
+
+.what_we_do_icon img {
+  width: 50px;
+  height: auto;
+  filter: invert(100%);
+}
+
+.our_trips {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.gallery_wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 576px) {
+  .gallery_wraper {
+    flex-direction: row;
+  }
+}
+
+.gallery_item {
+  margin-bottom: 2%;
+}
+
+@media only screen and (min-width: 576px) {
+  .gallery_item {
+    width: 32%;
+  }
+}
+.gallery_item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.gallery_item.item5 {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.contact_us {
+  background-color: #644b4f;
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.contact_us_carousel_wraper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+  .contact_us_carousel_wraper {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.contact_us_carousel.item.item1 {
+  flex-basis: 30%;
+}
+
+.contact_us_carousel.item.item1 h2 {
+  margin: 0;
+}
+
+.contact_us_carousel.item.item2 {
+  flex-basis: 70%;
+}
+
+@media only screen and (min-width: 576px) {
+  .contact_us_carousel.item.item2 {
+    margin-left: 1rem;
+  }
+}
+
+.contact_us_carousel.item.item2 button {
+  padding: 8px 15px;
+  margin: 2rem 0rem;
+  border-radius: 5px;
+  border: 0;
+}
+
+.reviews {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.reviews_carousel_wraper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 576px) {
+  .reviews_carousel_wraper {
+    flex-direction: row;
+  }
+}
+
+.reviews_text .text {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.reviews_carousel_wraper p {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 23px;
+}
+
+.reviews_carousel.item {
+  margin-top: 50px;
+}
+
+.reviews_img_wrapper {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.reviews_text img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.foto_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 576px) {
+  .foto_wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.foto_item {
+  height: 300px;
+}
+
+@media only screen and (min-width: 576px) {
+  .foto_item {
+    width: 50%;
+  }
+}
+
+.foto_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+
+a:link {
+  color: #efa69d;
+}
+
+a:hover {
+  color: #e9877b;
+}
